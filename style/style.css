@@ -1,0 +1,181 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+kbd{
+    background: orange;
+    padding: 10px;
+}
+
+.navbar{
+    border-bottom: 3px solid orange;
+    z-index: 1;
+    background: white;
+    padding: .8rem;
+}
+
+.navbar kbd{
+    font-size: 24px !important;
+}
+
+.navbar-nav li{
+    padding-right: 20px;
+}
+
+.nav-link{
+    font-size: 1.1em !important;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    max-height: auto;
+    background: #3a3a3a;
+    color: white;
+}
+
+footer hr{
+    border-top: 2px solid #b4b4b4;
+    width: 35%;
+}
+
+.padding{
+    padding-bottom: 2rem;
+}
+
+.welcome{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.welcome hr{
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+
+#cover{
+    width: 100%;
+    height: 500px;
+    
+    background: url("../image/theatre_2-wallpaper-1920x1080.jpg") no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    box-shadow: inset 0px 2px 6px black;
+}
+
+#cover h2{
+    position: relative;
+    color: bisque;
+    -webkit-text-stroke: 1px #8400a5;
+    text-shadow: 0px 0px 6px black;
+    font-size: 40px;
+    top: 6em;
+}
+
+#cover2{
+    width: 100%;
+    height: 500px;
+    
+    background: url("../image/theatre-wallpaper-1920x1080.jpg") no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#cover2 h1{
+    position: relative;
+    color: bisque;
+    text-shadow: 0px 0px 6px black;
+    font-size: 40px;
+    top: 6em;
+}
+
+#placeholder{
+    background: #d8d8d8;
+    height: 50px;
+    padding-top: .5rem;
+    box-shadow: 0px -2px 6px black;
+    border-top: 3px solid orange;
+}
+
+#placeholder2{
+    height: 70px;
+    background: #d8d8d8;
+    margin-bottom: -10px;
+}
+
+#info{
+    padding-top: 17%;
+    padding-bottom: 14.95%;
+    background: linear-gradient(rgba(105,105,105,0.7),rgba(105,105,105,0.3)),url("../image/paris_opera-wallpaper-1920x1080.jpg") no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white !important;
+}
+
+#info hr{
+    border-top: 2px solid orange;
+    width: 55%;
+}
+
+#info a{
+    color: orangered;
+    text-shadow: 0px 0px 5px black;
+}
+
+.cim{
+    border-bottom: 5px solid orange;
+}
+
+.active{
+    font-size: 20px;
+    color: orangered !important;
+    text-shadow: 0px 3px 6px #333;
+}
+
+
+
+
+/*Más felületekre*/
+
+@media (max-width: 992px){
+    #info{
+        padding-bottom: 40%;
+    }
+}
+@media (max-width: 768px){
+    #rendezendo{
+        padding: 13px;
+    }
+    
+    #rendezendo kbd{
+        padding-bottom: 3px;
+        text-align: center;
+    }
+    
+    #info{
+        padding-bottom: 35%;
+    }
+    
+}
+@media (max-width: 576px){
+    #placeholder{
+        height: auto;
+    }
+    #info{
+        padding-bottom: 30%;
+    }
+}
+
+/*Bootstrap felülírás*/
+[class*="col-"] {
+    padding: 1rem;
+}
